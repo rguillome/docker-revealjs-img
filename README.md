@@ -19,15 +19,17 @@ Replace [LOCAL_DIRECTORY_PATH] with the absolute path of the directory containin
 ###	The content of the reveal presentation :
 
 1. an index.html with an html section as :
-	```html
+
+	```html 
 	<section data-markdown="slides/dockprez.md"  
-             data-separator="^\n\n\n"  
-             data-separator-vertical="^\n\n">
-    </section>
-    ```
+	 	 data-separator="^\n\n\n"  
+        	 data-separator-vertical="^\n\n">
+	</section>
+	```
 2. a "slides" directory
 3. your markdown file under the "slides" directory
-4. don't forget the reveal configuration using the  following dependencies 
+4. don't forget the reveal configuration using the  following dependencies
+
 	```javascript
 	Reveal.initialize({
         controls: true,
@@ -43,4 +45,6 @@ Replace [LOCAL_DIRECTORY_PATH] with the absolute path of the directory containin
         ]
     });
     ```
+    
+    
 > Of course, you needs docker installed on your machine !
