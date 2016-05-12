@@ -9,7 +9,7 @@ If you want to **build a [reveal.js](https://github.com/hakimel/reveal.js) slide
 ###	Build the image :
 `docker build -t docker-reveal-[VERSION]--build-arg REVEAL_VERSION=[VERSION] .`
 
-<<<<<<< HEAD
+
 * Replace [VERSION] with the desired [reveal.js release](https://github.com/hakimel/reveal.js/releases) for example 3.3.0
 
 ###	Run the image :
@@ -20,7 +20,7 @@ If you want to **build a [reveal.js](https://github.com/hakimel/reveal.js) slide
 
 ###	The content of the reveal slideshow :
 
-<<<<<<< HEAD
+
 1.	an index.html with an html section as :
 
     ```html 
