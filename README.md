@@ -9,6 +9,7 @@ If you want to **build a [reveal.js](https://github.com/hakimel/reveal.js) slide
 ###	Build the image :
 `docker build -t docker-reveal-[VERSION]--build-arg REVEAL_VERSION=[VERSION] .`
 
+<<<<<<< HEAD
 * Replace [VERSION] with the desired [reveal.js release](https://github.com/hakimel/reveal.js/releases) for example 3.3.0
 
 ###	Run the image :
@@ -19,15 +20,21 @@ If you want to **build a [reveal.js](https://github.com/hakimel/reveal.js) slide
 
 ###	The content of the reveal slideshow :
 
+<<<<<<< HEAD
 1.	an index.html with an html section as :
-	``<section data-markdown="slides/example.md"  
+
+    ```html 
+	<section data-markdown="slides/example.md"  
              data-separator="^\n\n\n"  
              data-separator-vertical="^\n\n">
-    </section>``
+    </section>
+    ```
 2.	a "slides" directory
 3.	your markdown file under the "slides" directory
-4.  don't forget the reveal configuration using the  following dependencies 
-	<code>Reveal.initialize({
+4.  don't forget the reveal configuration using the  following dependencies
+
+    ```javascript
+	Reveal.initialize({
         controls: true,
         progress: true,
         history: true,
@@ -39,7 +46,8 @@ If you want to **build a [reveal.js](https://github.com/hakimel/reveal.js) slide
             { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
             { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }
         ]
-    });</code>
+    });
+    ```
 > Of course, you needs docker installed on your machine !
 
 ### Just run the example
