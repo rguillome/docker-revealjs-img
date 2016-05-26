@@ -54,3 +54,6 @@ If you want to **build a [reveal.js](https://github.com/hakimel/reveal.js) slide
 `docker run -d  -p 8000:8000 docker-reveal-[VERSION]`
 
 Replace [VERSION] with the desired [reveal.js release](https://github.com/hakimel/reveal.js/releases) for example 3.3.0
+
+### And if you don't want to build locally the image and just want to use it :
+`docker run -d  -p 8000:8000 rguillom/reveal`
